@@ -26,6 +26,7 @@ EDA, visualiazation and analysis of German Credit data
 
 ## Metrics
 - F2
+- Accuracy
 
 ## Models 
 - Logistic Regression
