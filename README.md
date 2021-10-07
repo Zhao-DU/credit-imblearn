@@ -1,41 +1,15 @@
-# credit-XGboost
-EDA, visualiazation and analysis of German Credit data
+# Goal
 
+The purpose of this repo is to test ideas about statistical learning methods on imbalanced datasets, including: 
 
-# Predictive analytics of German Credit dataset 
-- sample size n = 1000
-- response variable y_1 = 300, y_0 = 700
+- Oversampling/Undersampling (Random, SMOTE, ENN, TOMEK and various combinations of the two)
+- Feature selection (chi2, forward/backward, XGBoost importance)
+- Feature engineering (OneHot)
+- Cross-validation (k-fold-stratified)
+- Metric (F1, F2, PR-curve AUC)
+- Cost-sensitive Models ((weighted) logistic regression, (weighted) SVM, (weighted) DecisionTree, XGBoost)
+- Bayesian Hyperparameter Optimization (Optuna)
 
 ## Dataset 
 
-- Dataset taken from Pennstate https://online.stat.psu.edu/stat508/resource/analysis/gcd
-- 700:300 imbalanced dataset 
-
-
-## Dimensionality reduction and visualization
-- PCA
-- tSNE
-- Scatterplot matrix
-
-## Sampling techniques/transforms
-- Discretization of continuous variables  
-- Feature selection using chi2 test
-- Over/under sampling 
-  - Random, TOMEK, SMOTE, ENN
-- 10-fold stratified cross-validation 
-
-## Metrics
-- F2
-- Accuracy
-
-## Models 
-- Logistic Regression
-- Decision Tree
-- Random Forest
-- XGBoost 
-
-## Hyperparameter optimization
-- Exhaustive and random gridsearch
-- Bayesian optimization using Optuna (TPE)
-
-
+- Dataset taken from https://online.stat.psu.edu/stat508/resource/analysis/gcd
